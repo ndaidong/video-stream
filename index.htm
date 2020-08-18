@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Playing {VIDEO_FILE}</title>
+    <style>
+      * {
+        margin: 0;
+        pading: 0;
+      }
+      html, body {
+        background-color: #000;
+      }
+      video {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <video id="videoPlayer" controls muted autoplay>
+      <source src="{STREAM_URL}">
+    </video>
+  </body>
+</html>
